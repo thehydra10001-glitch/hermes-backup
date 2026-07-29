@@ -1,0 +1,97 @@
+{
+  "jobs": [
+    {
+      "id": "cf69ed8e19be",
+      "name": "LinkedIn Auto-Poster Daily",
+      "prompt": "Run the LinkedIn Auto-Poster script to fetch cyber security news and generate a post. Execute: cd /home/kali/linkedin-auto-poster && python3 -c \"from linkedin_poster import LinkedInAutomation, CONFIG; CONFIG['SCHEDULE_DAYS']=1; automation=LinkedInAutomation(CONFIG); automation.run_once()\"",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "opencode-zen",
+      "model_snapshot": "mimo-v2.5-free",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 2 * * *",
+        "display": "0 2 * * *"
+      },
+      "schedule_display": "0 2 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 17
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-08T08:18:48.993532+05:30",
+      "next_run_at": "2026-07-26T02:00:00+05:30",
+      "last_run_at": "2026-07-25T09:38:30.924081+05:30",
+      "last_status": "error",
+      "last_error": "RuntimeError: Skipped to prevent unintended spend: global inference config drifted since this job was created (model 'mimo-v2.5-free' -> 'deepseek-v4-flash-free'), and this job is unpinned. No inference call was made. To run on the new config, pin it explicitly: `cronjob action=update job_id=cf69ed8e19be provider=<provider> model=<model>` (or pin the original values to keep them). See #44585.",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "1466727178",
+        "chat_name": "J",
+        "thread_id": null,
+        "user_id": "1466727178"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "43eb90eeb3c2",
+      "name": "Daily Bhagavad Gita Shloka",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "daily_gita.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 7 * * *",
+        "display": "0 7 * * *"
+      },
+      "schedule_display": "0 7 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 15
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-11T10:16:12.061032+05:30",
+      "next_run_at": "2026-07-26T07:00:00+05:30",
+      "last_run_at": "2026-07-25T09:38:31.269770+05:30",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin,telegram:5784206319",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "1466727178",
+        "chat_name": "J",
+        "thread_id": null,
+        "user_id": "1466727178"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    }
+  ],
+  "updated_at": "2026-07-25T09:38:31.272062+05:30"
+}

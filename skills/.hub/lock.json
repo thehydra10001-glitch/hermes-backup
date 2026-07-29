@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "installed": {
+    "godmode": {
+      "source": "official",
+      "identifier": "official/security/godmode",
+      "trust_level": "builtin",
+      "scan_verdict": "dangerous",
+      "content_hash": "sha256:eb452f29db50e629",
+      "install_path": "security/godmode",
+      "files": [
+        "SKILL.md",
+        "templates/prefill.json",
+        "templates/prefill-subtle.json",
+        "scripts/auto_jailbreak.py",
+        "scripts/godmode_race.py",
+        "scripts/load_godmode.py",
+        "scripts/parseltongue.py",
+        "references/jailbreak-templates.md",
+        "references/refusal-detection.md"
+      ],
+      "metadata": {},
+      "installed_at": "2026-07-07T03:11:10.300758+00:00",
+      "updated_at": "2026-07-07T03:11:10.300784+00:00"
+    },
+    "cloudflare-temporary-deploy": {
+      "source": "official",
+      "identifier": "official/web-development/cloudflare-temporary-deploy",
+      "trust_level": "builtin",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:fcb6e5274ffc1d55",
+      "install_path": "web-development/cloudflare-temporary-deploy",
+      "files": [
+        "SKILL.md",
+        "scripts/parse_deploy_output.py"
+      ],
+      "metadata": {},
+      "installed_at": "2026-07-07T03:12:58.493171+00:00",
+      "updated_at": "2026-07-07T03:12:58.493194+00:00"
+    },
+    "sherlock": {
+      "source": "official",
+      "identifier": "official/security/sherlock",
+      "trust_level": "builtin",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:5c1da13887269a5e",
+      "install_path": "security/sherlock",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {},
+      "installed_at": "2026-07-07T03:13:18.440796+00:00",
+      "updated_at": "2026-07-07T03:13:18.440820+00:00"
+    },
+    "web-pentest": {
+      "source": "official",
+      "identifier": "official/security/web-pentest",
+      "trust_level": "builtin",
+      "scan_verdict": "dangerous",
+      "content_hash": "sha256:86c31c12d95ab248",
+      "install_path": "security/web-pentest",
+      "files": [
+        "SKILL.md",
+        "templates/authorization.md",
+        "templates/exploitation-queue.json",
+        "templates/pentest-report.md",
+        "scripts/recon-scan.sh",
+        "references/scope-enforcement.md",
+        "references/vuln-taxonomy.md",
+        "references/exploitation-techniques.md",
+        "references/bypass-techniques.md"
+      ],
+      "metadata": {},
+      "installed_at": "2026-07-07T03:13:57.637112+00:00",
+      "updated_at": "2026-07-07T03:13:57.637134+00:00"
+    }
+  }
+}
