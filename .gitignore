@@ -1,0 +1,11 @@
+
+# Environment files with secrets
+.env
+*.log
+__pycache__/
+*.pyc
+venv/
+.venv/
+.hermes/sessions/
+.hermes/logs/
+.hermes/auth.json
